@@ -40,5 +40,4 @@ app.add_page(
     title="Sakura Blossom Dev",
     description="Hello, my name is Emanuel. I'm an electronics and computer engineer.",
     image="sakura.ico",
-
 )
