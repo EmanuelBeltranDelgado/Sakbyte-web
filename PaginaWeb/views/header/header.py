@@ -25,7 +25,8 @@ def header()->rx.Component:
             rx.spacer(),
             infotext("+2", "Years programming in Python"),
             rx.spacer(),
-            rx.text("CCNA"),
+            f"CCNA",
+            #rx.text("CCNA"),
             width="100%"
         ),
 

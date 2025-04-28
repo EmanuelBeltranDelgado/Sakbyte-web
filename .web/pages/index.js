@@ -86,10 +86,7 @@ export default function Component() {
 {" Years programming in Python"}
 </RadixThemesBox>
 <RadixThemesFlex css={({ ["flex"] : 1, ["justifySelf"] : "stretch", ["alignSelf"] : "stretch" })}/>
-<RadixThemesText as={"p"}>
-
 {"CCNA"}
-</RadixThemesText>
 </RadixThemesFlex>
 <RadixThemesText as={"p"} css={({ ["textAlign"] : "justify", ["color"] : "#000000" })}>
 
