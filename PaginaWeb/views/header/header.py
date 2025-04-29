@@ -25,8 +25,8 @@ def header()->rx.Component:
             rx.spacer(),
             infotext("+2", "Years programming in Python"),
             rx.spacer(),
-            rx.text.span("CCNA"),
-            width="100%",
+            infotext("", "CCNA"),
+            width="100%"
         ),
 
         rx.text("""Highly motivated Software Developer with a recent degree 
