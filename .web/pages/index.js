@@ -36,7 +36,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"4"}>
 
-<RadixThemesAvatar color={"pink"} fallback={"EB"} size={"7"}/>
+<RadixThemesAvatar css={({ ["name"] : "Enamuel Beltran", ["height"] : "auto", ["border"] : "3px solid #E8A9B7" })} size={"8"} src={"sakura_blossom_dev_logo.png"}/>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
 <RadixThemesText as={"p"} css={({ ["color"] : "#000000" })} size={"4"} trim={"end"}>
@@ -204,7 +204,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
-<img alt={"WhatsApp"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"whatsApp.svg"}/>
+<img alt={"WhatsApp"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"whatsapp.svg"}/>
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
 <RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "1em", ["color"] : "#000000" })}>

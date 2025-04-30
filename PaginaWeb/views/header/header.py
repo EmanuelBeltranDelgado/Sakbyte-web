@@ -7,7 +7,14 @@ from PaginaWeb.styles.colors import TextColor
 def header()->rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(fallback="EB", size="7", color_scheme="pink"),
+            rx.avatar(
+                name="Enamuel Beltran", 
+                size="8",
+                src="sakura_blossom_dev_logo.png",
+                height="auto",
+                border="3px solid #E8A9B7",  # Borde decorativo (color del logo #E8A9B7)
+
+                ),
                 rx.vstack(
                     rx.text("Emanuel Beltran", size="4", trim="end", color=TextColor.HEADER.value),
                     rx.text("@emanuel", trim="start", color=TextColor.BODY.value),
