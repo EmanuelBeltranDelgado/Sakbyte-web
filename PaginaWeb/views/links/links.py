@@ -30,7 +30,7 @@ def links()->rx.Component:
             "WhatsApp",
             "Contact me on WhatsApp",
             constants.WHATSAPP,
-            "whatsApp.svg",
+            "whatsapp.svg",
         ),
 
         title("Projects"),
