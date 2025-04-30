@@ -63,6 +63,20 @@ export default function Component() {
 <img alt={"Linkedin"} css={({ ["width"] : "1.5em" })} src={"linkedin.svg"}/>
 </NextLink>
 </RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"mailto:emanuel.beltran5853@alumnos.udg.mx"} passHref={true}>
+
+<img alt={"Email"} css={({ ["width"] : "1.5em" })} src={"email.svg"}/>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"https://wa.me/c\u00f3digo_pa\u00edsn\u00famero_completo"} passHref={true}>
+
+<img alt={"WhatsApp"} css={({ ["width"] : "1.5em" })} src={"whatsapp.svg"}/>
+</NextLink>
+</RadixThemesLink>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -156,26 +170,26 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesHeading css={({ ["width"] : "100%", ["paddingTop"] : "1em", ["color"] : "#000000" })} size={"4"}>
 
-{"Projects"}
+{"Contact"}
 </RadixThemesHeading>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://www.facebook.com/"} passHref={true}>
+<NextLink href={"mailto:emanuel.beltran5853@alumnos.udg.mx"} passHref={true}>
 
 <RadixThemesButton css={({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
-<img alt={"Facebook"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"facebook.svg"}/>
+<img alt={"Email"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"email.svg"}/>
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
 <RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "1em", ["color"] : "#000000" })}>
 
-{"Facebook"}
+{"Email"}
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "0.8em", ["color"] : "#0c0c0c" })}>
 
-{"Pagina de facebook"}
+{"Contact me by email"}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -184,22 +198,74 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://www.colorhexa.com/ffb7c5"} passHref={true}>
+<NextLink href={"https://wa.me/c\u00f3digo_pa\u00edsn\u00famero_completo"} passHref={true}>
 
 <RadixThemesButton css={({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
-<img alt={"Color cherry blossom"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"colorhexa.svg"}/>
+<img alt={"WhatsApp"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"whatsApp.svg"}/>
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
 <RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "1em", ["color"] : "#000000" })}>
 
-{"Color cherry blossom"}
+{"WhatsApp"}
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "0.8em", ["color"] : "#0c0c0c" })}>
 
-{"Pagina de colores"}
+{"Contact me on WhatsApp"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesHeading css={({ ["width"] : "100%", ["paddingTop"] : "1em", ["color"] : "#000000" })} size={"4"}>
+
+{"Projects"}
+</RadixThemesHeading>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"https://github.com/EmanuelBeltranDelgado/Noticias"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<img alt={"News"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"github.svg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "1em", ["color"] : "#000000" })}>
+
+{"News"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "0.8em", ["color"] : "#0c0c0c" })}>
+
+{"Mobile news app"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"https://github.com/EmanuelBeltranDelgado/Sakura-Blossom-Dev-web"} passHref={true}>
+
+<RadixThemesButton css={({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<img alt={"Web page"} css={({ ["width"] : "3em", ["height"] : "3em" })} src={"github.svg"}/>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "1em", ["color"] : "#000000" })}>
+
+{"Web page"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["width"] : "100%", ["fontSize"] : "0.8em", ["color"] : "#0c0c0c" })}>
+
+{"Contact web page"}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>

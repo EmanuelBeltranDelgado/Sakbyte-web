@@ -1,5 +1,5 @@
 import reflex as rx
-from PaginaWeb.constants import GITHUB_URL, LINKEDIN_URL
+from PaginaWeb.constants import GITHUB_URL, LINKEDIN_URL, EMAIL, WHATSAPP
 from PaginaWeb.components.linkicon import linkicon
 from PaginaWeb.components.infotext import infotext
 from PaginaWeb.styles.colors import TextColor
@@ -14,6 +14,8 @@ def header()->rx.Component:
                     rx.hstack(
                         linkicon(GITHUB_URL, "github.svg", "Github"),
                         linkicon(LINKEDIN_URL, "linkedin.svg", "Linkedin"),
+                        linkicon(EMAIL, "email.svg", "Email"),
+                        linkicon(WHATSAPP, "whatsapp.svg", "WhatsApp"),
                     ),
                 ),
                 spacing="4"

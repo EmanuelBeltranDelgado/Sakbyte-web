@@ -1,4 +1,7 @@
 GITHUB_URL = "https://github.com/EmanuelBeltranDelgado"
 LINKEDIN_URL = "https://www.linkedin.com/in/emanuel-beltran-delgado-779b2a31b/"
 SAKURA_COLOR_URL = "https://www.colorhexa.com/ffb7c5"
-FACEBOOK_URL = "https://www.facebook.com/"
+EMAIL = "mailto:emanuel.beltran5853@alumnos.udg.mx"
+NEWS = "https://github.com/EmanuelBeltranDelgado/Noticias"
+PAGE_WEB = "https://github.com/EmanuelBeltranDelgado/Sakura-Blossom-Dev-web"
+WHATSAPP = "https://wa.me/código_paísnúmero_completo" #Ejemplo: "https://wa.me/521234567890"

@@ -12,26 +12,39 @@ def links()->rx.Component:
             constants.GITHUB_URL,
             "github.svg"
         ),
-
         linkbutton(
             "Linkedin", 
             "LinkedIn profile", 
             constants.LINKEDIN_URL,
-            "linkedin.svg"
-        ),
-        title("Projects"),
-        linkbutton(
-            "Facebook", 
-            "Pagina de facebook", 
-            constants.FACEBOOK_URL,
-            "facebook.svg"
+            "linkedin.svg",
         ),
 
+        title("Contact"),
         linkbutton(
-            "Color cherry blossom", 
-            "Pagina de colores", 
-            constants.SAKURA_COLOR_URL,
-            "colorhexa.svg",
+            "Email",
+            "Contact me by email",
+            constants.EMAIL,
+            "email.svg",
+        ),
+        linkbutton(
+            "WhatsApp",
+            "Contact me on WhatsApp",
+            constants.WHATSAPP,
+            "whatsApp.svg",
+        ),
+
+        title("Projects"),
+        linkbutton(
+            "News", 
+            "Mobile news app", 
+            constants.NEWS,
+            "github.svg",
+        ),
+        linkbutton(
+            "Web page", 
+            "Contact web page", 
+            constants.PAGE_WEB,
+            "github.svg",
         ),
         width="100%",
     )
