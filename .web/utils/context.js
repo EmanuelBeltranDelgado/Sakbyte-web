@@ -20,9 +20,9 @@ export const onLoadInternalEvent = () => []
 
 export const initialEvents = () => []
 
-export const isDevMode = true
+export const isDevMode = false
 
-export const lastCompiledTimeStamp = "2025-04-29 20:10:38.417690"
+export const lastCompiledTimeStamp = "2025-04-29 20:19:47.693375"
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
