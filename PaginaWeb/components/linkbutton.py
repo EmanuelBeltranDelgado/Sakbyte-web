@@ -1,8 +1,8 @@
 import reflex as rx
-import PaginaWeb.styles.styles as style
+import PaginaWeb.styles.styles_index as style
 
 # Define a function to create a link button component
-def linkbutton(title: str, body: str, url: str, image:str) -> rx.Component:
+def linkbutton(title: str, body: str, url: str, image:str, is_external=True) -> rx.Component:
     # Return a link component
     return rx.link(
         # Inside the link, create a button component
@@ -31,6 +31,6 @@ def linkbutton(title: str, body: str, url: str, image:str) -> rx.Component:
 
         ),
         href=url,  # Set the URL for the link
-        is_external=True,  # Open the link in a new tab or window
+        is_external=is_external,  # Open the link in a new tab or window
         width="100%",
     )

@@ -1,5 +1,5 @@
 import reflex as rx
-import PaginaWeb.styles.styles as style
+import PaginaWeb.styles.styles_index as style
 
 def linkicon(url:str, image:str, alt:str)->rx.Component:
     return rx.link(

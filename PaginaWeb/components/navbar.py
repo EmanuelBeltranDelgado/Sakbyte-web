@@ -1,12 +1,13 @@
 import reflex as rx
-import PaginaWeb.styles.styles as style
-from PaginaWeb.styles.fonts import Fonts, FontWeight
+import PaginaWeb.styles.styles_index as style
+from PaginaWeb.styles.fonts import Fonts#, FontWeight
 from PaginaWeb.styles.colors import TextColor, ColorSakura
+from PaginaWeb.routes import Route
 
 def navbar() -> rx.Component:
     return rx.hstack( 
-        
-        rx.text(
+        rx.link(
+            rx.text(
             "Sakura Blossom Dev", #Texto del titulo
             color=TextColor.HEADER.value, #Color del titulo
             size="7", #Tamaño del titulo
@@ -14,6 +15,8 @@ def navbar() -> rx.Component:
             font_family=Fonts.HEADER.value, #Fuente especifica
             #font_weight=FontWeight.MEDIUM.value,
         
+            ),
+            href=Route.INDEX.value,
         ),
 
         position="sticky", #Para que el menu de navegacion se quede fijo en la parte superior de la pagina

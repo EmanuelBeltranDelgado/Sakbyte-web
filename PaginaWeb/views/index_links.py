@@ -2,21 +2,22 @@ import reflex as rx
 from PaginaWeb import constants
 from PaginaWeb.components.linkbutton import linkbutton
 from PaginaWeb.components.title import title
+from PaginaWeb.routes import Route
 
-def links()->rx.Component:
+def index_links()->rx.Component:
     return rx.vstack(
         title("My networks"),
         linkbutton(
             "GITHUB", 
             "Overview", 
             constants.GITHUB_URL,
-            "github.svg"
+            "/github.svg"
         ),
         linkbutton(
             "Linkedin", 
             "LinkedIn profile", 
             constants.LINKEDIN_URL,
-            "linkedin.svg",
+            "/linkedin.svg",
         ),
 
         title("Contact"),
@@ -24,13 +25,13 @@ def links()->rx.Component:
             "Email",
             "Contact me by email",
             constants.EMAIL,
-            "email.svg",
+            "/email.svg",
         ),
         linkbutton(
             "WhatsApp",
             "Contact me on WhatsApp",
             constants.WHATSAPP,
-            "whatsapp.svg",
+            "/whatsapp.svg",
         ),
 
         title("Projects"),
@@ -38,13 +39,22 @@ def links()->rx.Component:
             "News", 
             "Mobile news app", 
             constants.NEWS,
-            "github.svg",
+            "/github.svg",
         ),
         linkbutton(
             "Web page", 
             "Contact web page", 
             constants.PAGE_WEB,
-            "github.svg",
+            "/github.svg",
+        ),
+
+        title("Others"),
+        linkbutton(
+            "Chat bot",
+            "Chat with AI and have fun",
+            Route.CHATBOT.value,
+            "/chat_bot.svg",
+            is_external=False
         ),
         width="100%",
     )
