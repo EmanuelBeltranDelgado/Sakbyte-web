@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useReducer, useState } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
-export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.pagina_web____state_chat_bot____state_chat_bot": {"chat_history": [], "question": ""}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
+export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.pagina_web____state_chat_bot____state_chat_bot": {"chat_history": [], "question": ""}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -9,8 +9,8 @@ export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
   reflex___state____state: createContext(null),
-  reflex___state____state__pagina_web____state_chat_bot____state_chat_bot: createContext(null),
   reflex___state____state__reflex___state____update_vars_internal_state: createContext(null),
+  reflex___state____state__pagina_web____state_chat_bot____state_chat_bot: createContext(null),
   reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
 }
@@ -50,9 +50,9 @@ export const initialEvents = () => [
     ...onLoadInternalEvent()
 ]
 
-export const isDevMode = true
+export const isDevMode = false
 
-export const lastCompiledTimeStamp = "2025-05-05 21:38:08.665036"
+export const lastCompiledTimeStamp = "2025-05-05 23:16:12.474836"
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
@@ -84,15 +84,15 @@ export function EventLoopProvider({ children }) {
 
 export function StateProvider({ children }) {
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
-  const [reflex___state____state__pagina_web____state_chat_bot____state_chat_bot, dispatch_reflex___state____state__pagina_web____state_chat_bot____state_chat_bot] = useReducer(applyDelta, initialState["reflex___state____state.pagina_web____state_chat_bot____state_chat_bot"])
   const [reflex___state____state__reflex___state____update_vars_internal_state, dispatch_reflex___state____state__reflex___state____update_vars_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____update_vars_internal_state"])
+  const [reflex___state____state__pagina_web____state_chat_bot____state_chat_bot, dispatch_reflex___state____state__pagina_web____state_chat_bot____state_chat_bot] = useReducer(applyDelta, initialState["reflex___state____state.pagina_web____state_chat_bot____state_chat_bot"])
   const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
   const dispatchers = useMemo(() => {
     return {
       "reflex___state____state": dispatch_reflex___state____state,
-      "reflex___state____state.pagina_web____state_chat_bot____state_chat_bot": dispatch_reflex___state____state__pagina_web____state_chat_bot____state_chat_bot,
       "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
+      "reflex___state____state.pagina_web____state_chat_bot____state_chat_bot": dispatch_reflex___state____state__pagina_web____state_chat_bot____state_chat_bot,
       "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.reflex___state____frontend_event_exception_state": dispatch_reflex___state____state__reflex___state____frontend_event_exception_state,
     }
@@ -100,8 +100,8 @@ export function StateProvider({ children }) {
 
   return (
     <StateContexts.reflex___state____state value={ reflex___state____state }>
-    <StateContexts.reflex___state____state__pagina_web____state_chat_bot____state_chat_bot value={ reflex___state____state__pagina_web____state_chat_bot____state_chat_bot }>
     <StateContexts.reflex___state____state__reflex___state____update_vars_internal_state value={ reflex___state____state__reflex___state____update_vars_internal_state }>
+    <StateContexts.reflex___state____state__pagina_web____state_chat_bot____state_chat_bot value={ reflex___state____state__pagina_web____state_chat_bot____state_chat_bot }>
     <StateContexts.reflex___state____state__reflex___state____on_load_internal_state value={ reflex___state____state__reflex___state____on_load_internal_state }>
     <StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state value={ reflex___state____state__reflex___state____frontend_event_exception_state }>
       <DispatchContext value={dispatchers}>
@@ -109,8 +109,8 @@ export function StateProvider({ children }) {
       </DispatchContext>
     </StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state>
     </StateContexts.reflex___state____state__reflex___state____on_load_internal_state>
-    </StateContexts.reflex___state____state__reflex___state____update_vars_internal_state>
     </StateContexts.reflex___state____state__pagina_web____state_chat_bot____state_chat_bot>
+    </StateContexts.reflex___state____state__reflex___state____update_vars_internal_state>
     </StateContexts.reflex___state____state>
   )
 }
