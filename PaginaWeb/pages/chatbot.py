@@ -3,6 +3,7 @@ from PaginaWeb.components.navbar import navbar
 from PaginaWeb.components.footer import footer
 from PaginaWeb.views.header import header
 from PaginaWeb.views.chat import chat, action_bar
+from PaginaWeb.components.background_animation import animation_bg
 from PaginaWeb import utils
 import PaginaWeb.styles.styles_index as style
 from PaginaWeb.routes import Route
@@ -19,7 +20,8 @@ def chatbot() -> rx.Component:
     
     return rx.box(
         navbar(), #Componente que representa el menu de navegacion
-        
+        #animation_bg(),
+
         rx.center(
             rx.vstack(
             header(details=False),

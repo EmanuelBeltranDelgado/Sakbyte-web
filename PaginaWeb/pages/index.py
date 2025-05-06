@@ -3,6 +3,7 @@ from PaginaWeb.components.navbar import navbar
 from PaginaWeb.components.footer import footer
 from PaginaWeb.views.header import header
 from PaginaWeb.views.index_links import index_links
+from PaginaWeb.components.background_animation import animation_bg
 from PaginaWeb import utils
 from PaginaWeb.routes import Route
 import PaginaWeb.styles.styles_index as style
@@ -19,7 +20,8 @@ def index() -> rx.Component:
     
     return rx.box(
         navbar(), #Componente que representa el menu de navegacion
-
+        animation_bg(),  # Fondo animado
+        
         rx.center(
             rx.vstack(
             header(), #Componente que representa header

@@ -4,9 +4,11 @@
 import { Fragment } from "react"
 import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
+import dynamic from "next/dynamic"
 import { isTrue } from "$/utils/state"
 import NextHead from "next/head"
 
+const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
 
 export default function Component() {
@@ -35,6 +37,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
+<ReactPlayer controls={false} css={({ ["position"] : "fixed", ["objectFit"] : "fill", ["zIndex"] : "-1", ["playsInline"] : true })} height={"1080px"} loop={true} muted={true} playing={true} url={"/videos/animation_sakura_blossom.mp4"} width={" 1920px"}/>
 <RadixThemesFlex css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["maxWidth"] : "560px", ["marginTop"] : "1em", ["marginBottom"] : "1em", ["marginInlineStart"] : "1em", ["marginInlineEnd"] : "1em" })} direction={"column"} gap={"3"}>
