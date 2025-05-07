@@ -1,7 +1,10 @@
 FROM python:3.12.4
 
-# Instalar unzip y otras dependencias necesarias
-RUN apt-get update && apt-get install -y unzip curl
+#install unzip
+RUN \
+apt-get update && \
+apt-get install unzip wget -y && \
+rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
@@ -12,10 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copia el resto del código
 COPY . .
-
-# Prepara el frontend durante el build (ya no lo intentará hacer luego)
-RUN reflex init
-RUN reflex export
 
 EXPOSE 8000
 
