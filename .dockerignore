@@ -1,0 +1,8 @@
+.web
+.git
+__pycache__/*
+Dockerfile
+uploaded_files
+**/.env
+*.env
+.env
