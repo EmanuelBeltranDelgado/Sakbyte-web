@@ -13,6 +13,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia el resto del código
 COPY . .
 
+# Prepara el frontend durante el build (ya no lo intentará hacer luego)
+RUN reflex init
+RUN reflex export
+
 EXPOSE 8000
 
 # Ejecuta la app
