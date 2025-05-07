@@ -2,11 +2,6 @@ FROM python:3.12.4
 
 WORKDIR /app
 
-# Instala dependencias del sistema (incluyendo unzip)
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends unzip && \
-    rm -rf /var/lib/apt/lists/*
-
 # Copia primero requirements.txt para cachear la instalación
 COPY requirements.txt .
 RUN pip install --upgrade pip
