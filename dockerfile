@@ -1,5 +1,8 @@
 FROM python:3.12.4
 
+# Instalar unzip y otras dependencias necesarias
+RUN apt-get update && apt-get install -y unzip curl
+
 WORKDIR /app
 
 # Copia primero requirements.txt para cachear la instalación

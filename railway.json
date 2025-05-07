@@ -1,9 +1,0 @@
-{
-    "build": {
-      "builder": "nixpacks",
-      "config": {
-        "packages": ["unzip"],
-        "startCommand": "reflex run --env prod --backend-host 0.0.0.0 --backend-port $PORT"
-      }
-    }
-  }
