@@ -6,6 +6,9 @@ apt-get update && \
 apt-get install unzip wget -y && \
 rm -rf /var/lib/apt/lists/*
 
+# Instalar unzip y otras dependencias necesarias
+RUN apk add --no-cache unzip curl
+
 WORKDIR /app
 
 # Copia primero requirements.txt para cachear la instalación
