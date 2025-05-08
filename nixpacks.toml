@@ -3,16 +3,3 @@ cmd = "reflex run --env prod --backend-host 0.0.0.0 --backend-port $PORT"
 
 [phases.setup]
 nixPkgs = ["unzip", "curl", "python312"]
-
-[phases.install]
-cmds = [
-  "pip install --upgrade pip",
-  "pip install reflex"
-]
-
-[phases.build]
-cmds = []
-
-[phases.start]
-cmds = ["reflex run --env prod --backend-host 0.0.0.0 --backend-port $PORT"]
-

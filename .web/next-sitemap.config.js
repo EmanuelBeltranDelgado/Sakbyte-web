@@ -1,1 +1,1 @@
-module.exports = {"siteUrl": "https://paginaweb-gray-ring.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
+module.exports = {"siteUrl": "http://localhost:3000", "generateRobotsTxt": true, "outDir": "_static"}
