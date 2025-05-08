@@ -15,6 +15,12 @@ COPY . .
 
 EXPOSE 8000
 
+CMD ["python", "bootstrap.py"]
+
+
 # Ejecuta la app
-CMD ["uvicorn", "sakura_blossom_dev:app", "--host", "0.0.0.0", "--port", "8000"]
+#CMD ["uvicorn", "sakura_blossom_dev:app", "--host", "0.0.0.0", "--port", "8000"]
+
+# Ejecuta la app
+#CMD ["reflex", "run", "--env", "prod", "--backend-only", "--backend-host", "0.0.0.0"]
 
