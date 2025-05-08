@@ -1,4 +1,4 @@
-FROM python:3.12.4
+FROM python:3.12-slim
 
 # Instalar unzip y otras dependencias necesarias
 RUN apt-get update && apt-get install -y unzip curl
@@ -15,12 +15,9 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["python", "bootstrap.py"]
-
-
 # Ejecuta la app
 #CMD ["uvicorn", "sakura_blossom_dev:app", "--host", "0.0.0.0", "--port", "8000"]
 
 # Ejecuta la app
-#CMD ["reflex", "run", "--env", "prod", "--backend-only", "--backend-host", "0.0.0.0"]
+CMD ["reflex", "run", "--env", "prod", "--backend-only", "--backend-host", "0.0.0.0"]
 
