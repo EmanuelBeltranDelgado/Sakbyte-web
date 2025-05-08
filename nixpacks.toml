@@ -2,4 +2,4 @@
 cmd = "reflex run --env prod --backend-host 0.0.0.0 --backend-port $PORT"
 
 [phases.setup]
-nixPkgs = ["unzip", "curl", "python312", "pip"]
+nixPkgs = ["unzip", "curl", "python312"]
