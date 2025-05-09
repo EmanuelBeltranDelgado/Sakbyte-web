@@ -1,8 +1,8 @@
 import reflex as rx
-from PaginaWeb import constants
-from PaginaWeb.components.linkbutton import linkbutton
-from PaginaWeb.components.title import title
-from PaginaWeb.routes import Route
+from SakuraBlossomDev import constants
+from SakuraBlossomDev.components.linkbutton import linkbutton
+from SakuraBlossomDev.components.title import title
+from SakuraBlossomDev.routes import Route
 
 # Función que genera un componente de interfaz de usuario con enlaces organizados por categorías
 def index_links() -> rx.Component:

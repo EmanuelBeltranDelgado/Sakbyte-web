@@ -1,8 +1,8 @@
 import reflex as rx
-import PaginaWeb.styles.styles_index as style
-from PaginaWeb.styles.fonts import Fonts#, FontWeight
-from PaginaWeb.styles.colors import TextColor, ColorSakura
-from PaginaWeb.routes import Route
+import SakuraBlossomDev.styles.styles_index as style
+from SakuraBlossomDev.styles.fonts import Fonts#, FontWeight
+from SakuraBlossomDev.styles.colors import TextColor, ColorSakura
+from SakuraBlossomDev.routes import Route
 
 # Función que define el componente de la barra de navegación
 def navbar() -> rx.Component:

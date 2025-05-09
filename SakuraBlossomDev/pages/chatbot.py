@@ -1,12 +1,12 @@
 import reflex as rx
-from PaginaWeb.components.navbar import navbar  # Importa el componente de la barra de navegación
-from PaginaWeb.views.header import header  # Importa el componente del encabezado
-from PaginaWeb.components.footer import footer  # Importa el componente del pie de página
-from PaginaWeb.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
-from PaginaWeb.components.background_animation import animation_bg  # Importa el componente de animación de fondo
-from PaginaWeb import utils  # Importa utilidades generales
-import PaginaWeb.styles.styles_index as style  # Importa estilos predefinidos
-from PaginaWeb.routes import Route  # Importa las rutas de la aplicación
+from SakuraBlossomDev.components.navbar import navbar  # Importa el componente de la barra de navegación
+from SakuraBlossomDev.views.header import header  # Importa el componente del encabezado
+from SakuraBlossomDev.components.footer import footer  # Importa el componente del pie de página
+from SakuraBlossomDev.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
+from SakuraBlossomDev.components.background_animation import animation_bg  # Importa el componente de animación de fondo
+from SakuraBlossomDev import utils  # Importa utilidades generales
+import SakuraBlossomDev.styles.styles_index as style  # Importa estilos predefinidos
+from SakuraBlossomDev.routes import Route  # Importa las rutas de la aplicación
 
 # Decorador que define una página con su ruta, título, descripción y metadatos
 @rx.page(

@@ -1,8 +1,8 @@
 import reflex as rx
-from PaginaWeb.constants import GITHUB_URL, LINKEDIN_URL, EMAIL, WHATSAPP_URL
-from PaginaWeb.components.linkicon import linkicon
-from PaginaWeb.components.infotext import infotext
-from PaginaWeb.styles.colors import TextColor
+from SakuraBlossomDev.constants import GITHUB_URL, LINKEDIN_URL, EMAIL, WHATSAPP_URL
+from SakuraBlossomDev.components.linkicon import linkicon
+from SakuraBlossomDev.components.infotext import infotext
+from SakuraBlossomDev.styles.colors import TextColor
 
 # Función que genera el encabezado de la página web
 # El parámetro "details" indica si se deben mostrar detalles adicionales

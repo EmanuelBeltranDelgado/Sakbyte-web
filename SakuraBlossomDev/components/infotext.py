@@ -1,5 +1,5 @@
 import reflex as rx
-from PaginaWeb.styles.colors import TextColor
+from SakuraBlossomDev.styles.colors import TextColor
 
 # Define una función llamada `infotext` que toma dos parámetros:
 # `title` (un string que representa el título) y `body` (un string que representa el cuerpo del texto).

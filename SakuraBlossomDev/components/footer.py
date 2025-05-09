@@ -1,6 +1,6 @@
 import reflex as rx
-from PaginaWeb.constants import SAKURA_COLOR_URL
-from PaginaWeb.styles.colors import TextColor, ColorSakura
+from SakuraBlossomDev.constants import SAKURA_COLOR_URL
+from SakuraBlossomDev.styles.colors import TextColor, ColorSakura
 import datetime
 
 # Definición de la función footer que retorna un componente de tipo rx.Component

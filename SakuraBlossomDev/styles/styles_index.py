@@ -1,6 +1,6 @@
 import reflex as rx
 from enum import Enum
-from PaginaWeb.styles.fonts import Fonts, FontWeight
+from SakuraBlossomDev.styles.fonts import Fonts, FontWeight
 from .colors import ColorSakura, TextColor
 
 # Constantes

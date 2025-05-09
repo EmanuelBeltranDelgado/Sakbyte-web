@@ -1,13 +1,13 @@
 # Importamos las librerías y módulos necesarios
 import reflex as rx
-from PaginaWeb.components.navbar import navbar  # Componente de la barra de navegación
-from PaginaWeb.views.header import header  # Vista del encabezado
-from PaginaWeb.components.footer import footer  # Componente del pie de página
-from PaginaWeb.views.index_links import index_links  # Vista de los enlaces principales
-from PaginaWeb.components.background_animation import animation_bg  # Animación de fondo
-from PaginaWeb import utils  # Utilidades generales del proyecto
-from PaginaWeb.routes import Route  # Definición de rutas
-import PaginaWeb.styles.styles_index as style  # Estilos específicos para la página de inicio
+from SakuraBlossomDev.components.navbar import navbar  # Componente de la barra de navegación
+from SakuraBlossomDev.views.header import header  # Vista del encabezado
+from SakuraBlossomDev.components.footer import footer  # Componente del pie de página
+from SakuraBlossomDev.views.index_links import index_links  # Vista de los enlaces principales
+from SakuraBlossomDev.components.background_animation import animation_bg  # Animación de fondo
+from SakuraBlossomDev import utils  # Utilidades generales del proyecto
+from SakuraBlossomDev.routes import Route  # Definición de rutas
+import SakuraBlossomDev.styles.styles_index as style  # Estilos específicos para la página de inicio
 
 # Decorador que define la configuración de la página principal
 @rx.page(
