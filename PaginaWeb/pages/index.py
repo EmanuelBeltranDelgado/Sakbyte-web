@@ -1,37 +1,39 @@
+# Importamos las librerías y módulos necesarios
 import reflex as rx
-from PaginaWeb.components.navbar import navbar
-from PaginaWeb.components.footer import footer
-from PaginaWeb.views.header import header
-from PaginaWeb.views.index_links import index_links
-from PaginaWeb.components.background_animation import animation_bg
-from PaginaWeb import utils
-from PaginaWeb.routes import Route
-import PaginaWeb.styles.styles_index as style
+from PaginaWeb.components.navbar import navbar  # Componente de la barra de navegación
+from PaginaWeb.views.header import header  # Vista del encabezado
+from PaginaWeb.components.footer import footer  # Componente del pie de página
+from PaginaWeb.views.index_links import index_links  # Vista de los enlaces principales
+from PaginaWeb.components.background_animation import animation_bg  # Animación de fondo
+from PaginaWeb import utils  # Utilidades generales del proyecto
+from PaginaWeb.routes import Route  # Definición de rutas
+import PaginaWeb.styles.styles_index as style  # Estilos específicos para la página de inicio
 
-
+# Decorador que define la configuración de la página principal
 @rx.page(
-    route=Route.INDEX.value,
-    title=utils.index_title,
-    description=utils.index_description,
-    meta=utils.index_meta,
+    route=Route.INDEX.value,  # Ruta asociada a la página de inicio
+    title=utils.index_title,  # Título de la página
+    description=utils.index_description,  # Descripción de la página
+    meta=utils.index_meta,  # Metadatos adicionales
 )
-
 def index() -> rx.Component:
-    
-    return rx.box(
-        navbar(), #Componente que representa el menu de navegacion
-        animation_bg(),  # Fondo animado
-        
+    """
+    Función que define la estructura y los componentes de la página de inicio.
+    Retorna un componente de Reflex que representa la página.
+    """
+    return rx.box(  # Contenedor principal de la página
+        navbar(),  # Barra de navegación en la parte superior
+        animation_bg(),  # Animación de fondo
+
+        # Contenedor central con el contenido principal
         rx.center(
-            rx.vstack(
-            header(), #Componente que representa header
-            index_links(), #Componente que representa links
-            max_width=style.MAX_WIDTH, #Maxima area de pixeles donde se visualizaran mis componentes
-            margin_y=style.Size.MEDIUM.value, #Crea el margen pero hacia adentro, (se puede espesificar la condenad o no)
-            margin_x=style.Size.MEDIUM.value,
-
+            rx.vstack(  # Apilamos los componentes verticalmente
+                header(),  # Encabezado principal
+                index_links(),  # Enlaces principales de la página
+                max_width=style.MAX_WIDTH,  # Ancho máximo del contenedor
+                margin_y=style.Size.MEDIUM.value,  # Margen vertical
+                margin_x=style.Size.MEDIUM.value,  # Margen horizontal
             ),
-
         ),
-        footer(), #Componente que representa en footer
-    ),
+        footer(),  # Pie de página
+    )

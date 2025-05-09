@@ -4,57 +4,58 @@ from PaginaWeb.components.linkbutton import linkbutton
 from PaginaWeb.components.title import title
 from PaginaWeb.routes import Route
 
-def index_links()->rx.Component:
-    return rx.vstack(
-        title("My networks"),
-        linkbutton(
+# Función que genera un componente de interfaz de usuario con enlaces organizados por categorías
+def index_links() -> rx.Component:
+    return rx.vstack(  # Crea un contenedor vertical para organizar los elementos
+        title("My networks"),  # Título para la sección de redes sociales
+        linkbutton(  # Botón de enlace para GitHub
             "GITHUB", 
             "Overview", 
-            constants.GITHUB_URL,
-            "/github.svg"
+            constants.GITHUB_URL,  # URL de GitHub
+            "/svg/github.svg"  # Icono asociado
         ),
-        linkbutton(
+        linkbutton(  # Botón de enlace para LinkedIn
             "Linkedin", 
             "LinkedIn profile", 
-            constants.LINKEDIN_URL,
-            "/linkedin.svg",
+            constants.LINKEDIN_URL,  # URL de LinkedIn
+            "/svg/linkedin.svg",  # Icono asociado
         ),
 
-        title("Contact"),
-        linkbutton(
+        title("Contact"),  # Título para la sección de contacto
+        linkbutton(  # Botón de enlace para correo electrónico
             "Email",
             "Contact me by email",
-            constants.EMAIL,
-            "/email.svg",
+            constants.EMAIL,  # Dirección de correo electrónico
+            "/svg/email.svg",  # Icono asociado
         ),
-        linkbutton(
+        linkbutton(  # Botón de enlace para WhatsApp
             "WhatsApp",
             "Contact me on WhatsApp",
-            constants.WHATSAPP,
-            "/whatsapp.svg",
+            constants.WHATSAPP_URL,  # URL de WhatsApp
+            "/svg/whatsapp.svg",  # Icono asociado
         ),
 
-        title("Projects"),
-        linkbutton(
+        title("Projects"),  # Título para la sección de proyectos
+        linkbutton(  # Botón de enlace para la aplicación de noticias
             "News", 
             "Mobile news app", 
-            constants.NEWS,
-            "/github.svg",
+            constants.NEWS,  # URL del proyecto de noticias
+            "/svg/github.svg",  # Icono asociado
         ),
-        linkbutton(
+        linkbutton(  # Botón de enlace para la página web
             "Web page", 
             "Contact web page", 
-            constants.PAGE_WEB,
-            "/github.svg",
+            constants.PAGE_WEB,  # URL del proyecto de página web
+            "/svg/github.svg",  # Icono asociado
         ),
 
-        title("Others"),
-        linkbutton(
+        title("Others"),  # Título para la sección de otros
+        linkbutton(  # Botón de enlace para el chatbot
             "Chat bot",
             "Chat with AI and have fun",
-            Route.CHATBOT.value,
-            "/chat_bot.svg",
-            is_external=False
+            Route.CHATBOT.value,  # Ruta interna para el chatbot
+            "/svg/chat_bot.svg",  # Icono asociado
+            is_external=False  # Indica que el enlace no es externo
         ),
-        width="100%",
+        width="100%",  # Ancho del contenedor
     )

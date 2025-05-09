@@ -1,2 +1,2 @@
-# PaginaWeb/__init__.py
+# Exportamos el backend para que el fontend lo pueda usar
 from .StateChatBot import StateChatBot

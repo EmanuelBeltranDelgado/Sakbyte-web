@@ -1,36 +1,41 @@
 import reflex as rx
 import PaginaWeb.styles.styles_index as style
 
-# Define a function to create a link button component
-def linkbutton(title: str, body: str, url: str, image:str, is_external=True) -> rx.Component:
-    # Return a link component
+# Definimos una función llamada `linkbutton` que genera un componente de botón con un enlace.
+# Parámetros:
+# - title: Título del botón.
+# - body: Descripción o texto adicional del botón.
+# - url: Enlace al que redirige el botón.
+# - image: Ruta de la imagen que se mostrará en el botón.
+# - is_external: Indica si el enlace es externo (por defecto es True).
+def linkbutton(title: str, body: str, url: str, image: str, is_external=True) -> rx.Component:
+    # Retornamos un componente de enlace (`rx.link`) que contiene un botón.
     return rx.link(
-        # Inside the link, create a button component
+        # El botón (`rx.button`) contiene una estructura horizontal (`rx.hstack`).
         rx.button(
-            # Inside the button, create a horizontal stack (hstack) to arrange elements horizontally
+            # `rx.hstack` organiza los elementos de forma horizontal.
             rx.hstack(
-                # Add an icon to the left side of the button
+                # Agregamos una imagen al botón.
                 rx.image(
                     image, 
-                    width = style.Size.BIG.value,
-                    height = style.Size.BIG.value,
-                    alt=title
-                    ),
-
-                # Add a vertical stack (vstack) to arrange the title and body text vertically
-                rx.vstack(
-                    # Add the title text with a specific style
-                    rx.text(title, style=style.botton_title_style),
-                    # Add the body text with a specific style
-                    rx.text(body, style=style.botton_body_style ),
-                    align="center",  # Center-align the text vertically
+                    width=style.Size.BIG.value,  # Ancho de la imagen definido en estilos.
+                    height=style.Size.BIG.value, # Alto de la imagen definido en estilos.
+                    alt=title  # Texto alternativo para la imagen.
                 ),
-                align="center",  # Center-align the icon and text horizontally
+                # Agregamos un contenedor vertical (`rx.vstack`) para el texto.
+                rx.vstack(
+                    # Texto del título del botón con estilo personalizado.
+                    rx.text(title, style=style.botton_title_style),
+                    # Texto del cuerpo del botón con estilo personalizado.
+                    rx.text(body, style=style.botton_body_style),
+                    align="center",  # Alineación centrada del texto.
+                ),
+                align="center",  # Alineación centrada de los elementos horizontales.
                 
             ),
 
         ),
-        href=url,  # Set the URL for the link
-        is_external=is_external,  # Open the link in a new tab or window
-        width="100%",
+        href=url,  # Enlace al que redirige el botón.
+        is_external=is_external,  # Indica si el enlace es externo.
+        width="100%",  # Ancho del enlace.
     )

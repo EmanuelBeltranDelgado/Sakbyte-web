@@ -1,16 +1,17 @@
 import reflex as rx
-import PaginaWeb.styles.styles_index as style
-from PaginaWeb.pages import index
-from PaginaWeb.pages import chatbot
+import SakuraBlossomDev.styles.styles_index as style
 
-
-#class State(rx.State):
-#    pass
+#importamos las paginas para que no de errores
+from SakuraBlossomDev.pages import index
+from SakuraBlossomDev.pages import chatbot
 
 #Inicializacion de la aplicacion
 app = rx.App(
+    #Aplicamos los estilos
     stylesheets=style.STYLESHEETS,
     style=style.BASE_STYLE,
+
+    #script de google analytics
     head_components=[
         rx.script(src=f"https://www.googletagmanager.com/gtag/js?id=G-G756F9B5L5"),
         rx.script(

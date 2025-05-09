@@ -1,46 +1,46 @@
 import reflex as rx
-from PaginaWeb.components.navbar import navbar
-from PaginaWeb.components.footer import footer
-from PaginaWeb.views.header import header
-from PaginaWeb.views.chat import chat, action_bar
-from PaginaWeb.components.background_animation import animation_bg
-from PaginaWeb import utils
-import PaginaWeb.styles.styles_index as style
-from PaginaWeb.routes import Route
+from PaginaWeb.components.navbar import navbar  # Importa el componente de la barra de navegación
+from PaginaWeb.views.header import header  # Importa el componente del encabezado
+from PaginaWeb.components.footer import footer  # Importa el componente del pie de página
+from PaginaWeb.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
+from PaginaWeb.components.background_animation import animation_bg  # Importa el componente de animación de fondo
+from PaginaWeb import utils  # Importa utilidades generales
+import PaginaWeb.styles.styles_index as style  # Importa estilos predefinidos
+from PaginaWeb.routes import Route  # Importa las rutas de la aplicación
 
-
+# Decorador que define una página con su ruta, título, descripción y metadatos
 @rx.page(
-    route=Route.CHATBOT.value,
-    title=utils.chatbot_title,
-    description=utils.chatbot_description,
-    meta=utils.chatbot_meta,
+    route=Route.CHATBOT.value,  # Ruta asociada a la página
+    title=utils.chatbot_title,  # Título de la página
+    description=utils.chatbot_description,  # Descripción de la página
+    meta=utils.chatbot_meta,  # Metadatos adicionales
 )
-
 def chatbot() -> rx.Component:
-    
+    # Retorna la estructura principal de la página
     return rx.box(
-        navbar(), #Componente que representa el menu de navegacion
-        #animation_bg(),
+        navbar(),  # Componente de la barra de navegación en la parte superior
+        # animation_bg(),  # Componente de animación de fondo (actualmente comentado)
 
+        # Sección central con un encabezado
         rx.center(
             rx.vstack(
-            header(details=False),
-            max_width=style.MAX_WIDTH,
-            margin_y=style.Size.MEDIUM.value,
-            margin_x=style.Size.MEDIUM.value,
-            margin_bottom="84px",
+                header(details=False),  # Componente del encabezado sin detalles adicionales
+                max_width=style.MAX_WIDTH,  # Define el ancho máximo del contenedor según los estilos
+                margin_y=style.Size.MEDIUM.value,  # Margen vertical medio
+                margin_x=style.Size.MEDIUM.value,  # Margen horizontal medio
+                margin_bottom="84px",  # Margen inferior específico
             ),
-            width="87%"
+            width="87%"  # Define el ancho del contenedor central
         ),
         
-        
+        # Sección central con el chat y la barra de acciones
         rx.center(
             rx.vstack(
-                chat(),
-                action_bar(),
-                align="center",
+                chat(),  # Componente principal del chat
+                action_bar(),  # Barra de acciones asociada al chat
+                align="center",  # Alineación centrada de los elementos
             ),
         ),
         
-        footer(), #Componente que representa en footer
-    ),
+        footer(),  # Componente del pie de página en la parte inferior
+    )

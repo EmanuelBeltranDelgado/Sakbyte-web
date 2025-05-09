@@ -1,7 +1,10 @@
 import reflex as rx
 import PaginaWeb.styles.styles_index as style
 
-def title(text)->rx.Component:
+# Definimos una función llamada 'title' que toma un parámetro 'text' y devuelve un componente de tipo 'heading'.
+def title(text) -> rx.Component:
+    # Retorna un encabezado (heading) con el texto proporcionado, un tamaño de fuente "4",
+    # un estilo definido en 'style.title_style' y un ancho del 100%.
     return rx.heading(
         text,
         size="4",
