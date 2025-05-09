@@ -10,18 +10,18 @@ import { jsx } from "@emotion/react"
 import RadixThemesColorModeProvider from "$/components/reflex/radix_themes_color_mode_provider.js"
 import { Theme as RadixThemesTheme } from "@radix-ui/themes"
 import theme from "$/utils/theme.js"
-import { DefaultOverlayComponents, MemoizedToastProvider } from "$/utils/components"
+import { DefaultOverlayComponents, MemoizedBadge, MemoizedToastProvider } from "$/utils/components"
 
 
 import { EventLoopProvider, StateProvider, defaultColorMode } from "$/utils/context.js";
 import { ThemeProvider } from 'next-themes'
-import * as utils_context from "$/utils/context";
+import * as utils_components from "$/utils/components";
 import * as emotion_react from "@emotion/react";
+import * as React from "react";
+import * as utils_context from "$/utils/context";
+import * as next_link from "next/link";
 import * as utils_state from "$/utils/state";
 import * as radix_ui_themes from "@radix-ui/themes";
-import * as next_link from "next/link";
-import * as React from "react";
-import * as utils_components from "$/utils/components";
 
 
 function AppWrap({children}) {
@@ -49,6 +49,7 @@ function AppWrap({children}) {
 <Fragment>
 
 {children}
+<MemoizedBadge/>
 </Fragment>
 </Fragment>
 </Fragment>
@@ -63,13 +64,13 @@ export default function MyApp({ Component, pageProps }) {
   React.useEffect(() => {
     // Make contexts and state objects available globally for dynamic eval'd components
     let windowImports = {
-      "$/utils/context": utils_context,
+      "$/utils/components": utils_components,
       "@emotion/react": emotion_react,
+      "react": React,
+      "$/utils/context": utils_context,
+      "next/link": next_link,
       "$/utils/state": utils_state,
       "@radix-ui/themes": radix_ui_themes,
-      "next/link": next_link,
-      "react": React,
-      "$/utils/components": utils_components,
     };
     window["__reflex"] = windowImports;
   }, []);

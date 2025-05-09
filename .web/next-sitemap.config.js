@@ -1,1 +1,1 @@
-module.exports = {"siteUrl": "https://paginaweb-blue-sun.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
+module.exports = {"siteUrl": "https://sakurablossomdev-teal-sun.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
