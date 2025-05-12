@@ -80,7 +80,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://wa.me/523320357100"} passHref={true}>
+<NextLink href={"https://wa.link/6iss18"} passHref={true}>
 
 <img alt={"WhatsApp"} css={({ ["width"] : "1.5em" })} src={"/svg/whatsapp.svg"}/>
 </NextLink>
@@ -219,7 +219,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://wa.me/523320357100"} passHref={true}>
+<NextLink href={"https://wa.link/6iss18"} passHref={true}>
 
 <RadixThemesButton css={({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })}>
 
