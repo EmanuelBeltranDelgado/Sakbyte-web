@@ -9,7 +9,7 @@ message_style = dict(
     border_radius="5px",  # Bordes redondeados.
     margin_y="0.5em",  # Margen vertical entre mensajes.
     box_shadow=shadow,  # Sombra aplicada al mensaje.
-    max_width="30em",  # Ancho máximo del mensaje.
+    max_width="90%",  # Ancho máximo del mensaje.
     display="inline-block",  # Mostrar los mensajes en bloque en línea.
 )
 
@@ -30,7 +30,9 @@ input_style = dict(
     border_width="1px",  # Ancho del borde del campo de entrada.
     padding="0.5em",  # Espaciado interno del campo de entrada.
     box_shadow=shadow,  # Sombra aplicada al campo de entrada.
-    width="350px",  # Ancho del campo de entrada.
+    width="100%",  # Cambiar a 100%
+    min_width="0",  # Evitar overflow
+    flex="1",  # Permite que el campo de entrada crezca para ocupar el espacio disponible.
 )
 
 # Estilo para el botón de enviar.

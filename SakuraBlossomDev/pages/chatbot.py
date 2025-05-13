@@ -31,7 +31,7 @@ def chatbot() -> rx.Component:
                 margin_x=style.Size.MEDIUM.value,  # Margen horizontal medio
                 margin_bottom="84px",  # Margen inferior específico
             ),
-            width="87%"  # Define el ancho del contenedor central
+            width="100%"  # Define el ancho del contenedor central
         ),
         
         # Sección central con el chat y la barra de acciones

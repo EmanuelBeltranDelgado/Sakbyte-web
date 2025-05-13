@@ -346,10 +346,10 @@ jsx(
 "title",
 {},
 "Sakura Blossom Dev"
-,),jsx("meta",{content:"Hello, my name is Emanuel. I'm an electronics and computer engineer.",name:"description"},)
+,),jsx("meta",{content:"sakura blossom dev website developed in pure Python",name:"description"},)
 ,jsx("meta",{content:"/ico/sakura.ico",property:"og:image"},)
 ,jsx("meta",{content:"Sakura Blossom Dev",name:"og:title"},)
-,jsx("meta",{content:"Hello, my name is Emanuel. I'm an electronics and computer engineer.",name:"og:description"},)
+,jsx("meta",{content:"sakura blossom dev website developed in pure Python",name:"og:description"},)
 ,jsx("meta",{content:"/ico/sakura.ico",name:"og:image"},)
 ,jsx("meta",{content:"website",name:"og:type"},)
 ,),)

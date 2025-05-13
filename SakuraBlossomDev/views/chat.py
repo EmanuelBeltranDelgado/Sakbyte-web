@@ -36,19 +36,26 @@ def chat() -> rx.Component:
 def action_bar() -> rx.Component:
     return rx.hstack(
         # Campo de entrada para escribir la pregunta
-        rx.input(
+        rx.text_area(
             value=StateChatBot.question,  # Valor actual de la pregunta
             placeholder="Ask a question",  # Texto de marcador de posición
             on_change=StateChatBot.set_question,  # Evento para actualizar la pregunta
             style=styles_chat.input_style,  # Estilo del campo de entrada
             size="3",  # Tamaño del campo
+
         ),
-        # Botón para enviar la pregunta
-        rx.button(
-            "Ask",  # Texto del botón
-            on_click=StateChatBot.answer,  # Evento para procesar la respuesta
-            width="20%",  # Ancho del botón
-            size="2",  # Tamaño del botón
+        rx.vstack(
+            # Botón para enviar la pregunta
+            rx.box(), # Box para bajar el boton
+            rx.button(
+                "Ask",  # Texto del botón
+                on_click=StateChatBot.answer,  # Evento para procesar la respuesta
+                width="100%",  # Ancho del botón
+                size="2",  # Tamaño del botón
+
+            ),
+            spacing="7", # Espacio entre el boton y el box
         ),
+
         width="100%"  # Ancho total de la barra de acción
     )
