@@ -14,6 +14,7 @@ from SakuraBlossomDev.routes import Route  # Importa las rutas de la aplicación
     title=utils.chatbot_title,  # Título de la página
     description=utils.chatbot_description,  # Descripción de la página
     meta=utils.chatbot_meta,  # Metadatos adicionales
+    image=utils.chatbot_image,
 )
 def chatbot() -> rx.Component:
     # Retorna la estructura principal de la página

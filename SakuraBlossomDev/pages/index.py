@@ -15,6 +15,7 @@ import SakuraBlossomDev.styles.styles_index as style  # Estilos específicos par
     title=utils.index_title,  # Título de la página
     description=utils.index_description,  # Descripción de la página
     meta=utils.index_meta,  # Metadatos adicionales
+    image=utils.index_image,
 )
 def index() -> rx.Component:
     """

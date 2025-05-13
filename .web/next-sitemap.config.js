@@ -1,1 +1,0 @@
-module.exports = {"siteUrl": "https://sakurablossomdev-aqua-orca.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
