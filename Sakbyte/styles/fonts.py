@@ -5,7 +5,7 @@ class Fonts(Enum):
     TITLE = "Poppins"  # Fuente para los títulos
     BODY = "Poppins"   # Fuente para el cuerpo del texto
     DEFAULT = "Arial"  # Fuente predeterminada
-    HEADER = "Comfortaa"  # Fuente para los encabezados
+    HEADER = "Hammersmith One"  # Fuente para los encabezados
 
 # Esta clase se utiliza para el pesos de fuente (grosor de las letras).
 class FontWeight(Enum):

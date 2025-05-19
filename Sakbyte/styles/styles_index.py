@@ -1,6 +1,6 @@
 import reflex as rx
 from enum import Enum
-from SakuraBlossomDev.styles.fonts import Fonts, FontWeight
+from Sakbyte.styles.fonts import Fonts, FontWeight
 from .colors import ColorSakura, TextColor
 
 # Constantes
@@ -9,7 +9,7 @@ MAX_WIDTH = "560px"  # Ancho máximo para los elementos de la página
 # Lista de hojas de estilo externas para importar fuentes
 STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap",
-    "https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap",
+    "https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap",
 ]
 
 # Tamaños de fuente definidos como una enumeración

@@ -1,5 +1,5 @@
 import reflex as rx
-import SakuraBlossomDev.styles.styles_index as style
+import Sakbyte.styles.styles_index as style
 
 # Definimos una función llamada `linkbutton` que genera un componente de botón con un enlace.
 # Parámetros:

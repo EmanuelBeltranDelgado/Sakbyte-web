@@ -1,6 +1,6 @@
 import reflex as rx
-from SakuraBlossomDev.styles import styles_chat
-from SakuraBlossomDev.StateChatBot import StateChatBot
+from Sakbyte.styles import styles_chat
+from Sakbyte.StateChatBot import StateChatBot
 
 # Función que genera un componente de pregunta y respuesta (QA)
 # Recibe una pregunta y una respuesta como parámetros y los organiza en un diseño visual.

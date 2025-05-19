@@ -1,12 +1,12 @@
 import reflex as rx
-from SakuraBlossomDev.components.navbar import navbar  # Importa el componente de la barra de navegación
-from SakuraBlossomDev.views.header import header  # Importa el componente del encabezado
-from SakuraBlossomDev.components.footer import footer  # Importa el componente del pie de página
-from SakuraBlossomDev.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
-from SakuraBlossomDev.components.background_animation import animation_bg  # Importa el componente de animación de fondo
-from SakuraBlossomDev import utils  # Importa utilidades generales
-import SakuraBlossomDev.styles.styles_index as style  # Importa estilos predefinidos
-from SakuraBlossomDev.routes import Route  # Importa las rutas de la aplicación
+from Sakbyte.components.navbar import navbar  # Importa el componente de la barra de navegación
+from Sakbyte.views.header import header  # Importa el componente del encabezado
+from Sakbyte.components.footer import footer  # Importa el componente del pie de página
+from Sakbyte.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
+from Sakbyte.components.background_animation import animation_bg  # Importa el componente de animación de fondo
+from Sakbyte import utils  # Importa utilidades generales
+import Sakbyte.styles.styles_index as style  # Importa estilos predefinidos
+from Sakbyte.routes import Route  # Importa las rutas de la aplicación
 
 # Decorador que define una página con su ruta, título, descripción y metadatos
 @rx.page(

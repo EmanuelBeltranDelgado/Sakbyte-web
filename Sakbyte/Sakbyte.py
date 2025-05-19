@@ -1,9 +1,9 @@
 import reflex as rx
-import SakuraBlossomDev.styles.styles_index as style
+import Sakbyte.styles.styles_index as style
 
 #importamos las paginas para que no de errores
-from SakuraBlossomDev.pages import index
-from SakuraBlossomDev.pages import chatbot
+from Sakbyte.pages import index
+from Sakbyte.pages import chatbot
 
 #Inicializacion de la aplicacion
 app = rx.App(

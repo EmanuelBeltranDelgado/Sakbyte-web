@@ -1,5 +1,5 @@
 import reflex as rx
-import SakuraBlossomDev.styles.styles_index as style
+import Sakbyte.styles.styles_index as style
 
 # Definimos una función llamada 'title' que toma un parámetro 'text' y devuelve un componente de tipo 'heading'.
 def title(text) -> rx.Component:

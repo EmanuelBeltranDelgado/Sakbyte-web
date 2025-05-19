@@ -1,13 +1,13 @@
 # Importamos las librerías y módulos necesarios
 import reflex as rx
-from SakuraBlossomDev.components.navbar import navbar  # Componente de la barra de navegación
-from SakuraBlossomDev.views.header import header  # Vista del encabezado
-from SakuraBlossomDev.components.footer import footer  # Componente del pie de página
-from SakuraBlossomDev.views.index_links import index_links  # Vista de los enlaces principales
-from SakuraBlossomDev.components.background_animation import animation_bg  # Animación de fondo
-from SakuraBlossomDev import utils  # Utilidades generales del proyecto
-from SakuraBlossomDev.routes import Route  # Definición de rutas
-import SakuraBlossomDev.styles.styles_index as style  # Estilos específicos para la página de inicio
+from Sakbyte.components.navbar import navbar  # Componente de la barra de navegación
+from Sakbyte.views.header import header  # Vista del encabezado
+from Sakbyte.components.footer import footer  # Componente del pie de página
+from Sakbyte.views.index_links import index_links  # Vista de los enlaces principales
+from Sakbyte.components.background_animation import animation_bg  # Animación de fondo
+from Sakbyte import utils  # Utilidades generales del proyecto
+from Sakbyte.routes import Route  # Definición de rutas
+import Sakbyte.styles.styles_index as style  # Estilos específicos para la página de inicio
 
 # Decorador que define la configuración de la página principal
 @rx.page(

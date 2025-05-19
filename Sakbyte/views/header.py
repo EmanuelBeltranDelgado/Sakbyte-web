@@ -1,8 +1,8 @@
 import reflex as rx
-from SakuraBlossomDev.constants import GITHUB_URL, LINKEDIN_URL, EMAIL, WHATSAPP_URL
-from SakuraBlossomDev.components.linkicon import linkicon
-from SakuraBlossomDev.components.infotext import infotext
-from SakuraBlossomDev.styles.colors import TextColor
+from Sakbyte.constants import GITHUB_URL, LINKEDIN_URL, EMAIL, WHATSAPP_URL
+from Sakbyte.components.linkicon import linkicon
+from Sakbyte.components.infotext import infotext
+from Sakbyte.styles.colors import TextColor
 
 # Función que genera el encabezado de la página web
 # El parámetro "details" indica si se deben mostrar detalles adicionales
@@ -10,11 +10,11 @@ def header(details=True) -> rx.Component:
     return rx.vstack(  # Contenedor vertical principal
         rx.hstack(  # Contenedor horizontal para el avatar y la información básica
             rx.avatar(  # Componente de avatar con imagen y estilo personalizado
+                src="/png/logo.png",
                 name="Enamuel Beltran", 
-                size="8",
-                src="/png/sakura_blossom_dev_logo.png",
+                size="7",
                 height="auto",
-                border="3px solid #E8A9B7",  # Borde decorativo (color del logo #E8A9B7)
+                #border="4px solid #E8A9B7",  # Borde decorativo (color del logo #E8A9B7)
             ),
             rx.vstack(  # Contenedor vertical para el nombre, usuario y enlaces
                 rx.text("Emanuel Beltran", size="4", trim="end", color=TextColor.HEADER.value),  # Nombre del usuario

@@ -27,18 +27,15 @@ RadixThemesBox,
 {},
 jsx(
 RadixThemesFlex,
-{align:"start",className:"rx-Stack",css:({ ["position"] : "sticky", ["zIndex"] : "999", ["paddingInlineStart"] : "1em", ["paddingInlineEnd"] : "1em", ["paddingTop"] : "0.8em", ["paddingBottom"] : "0.8em", ["background"] : "#fff2f4", ["top"] : "0", ["width"] : "100%" }),direction:"row",gap:"3"},
+{align:"start",className:"rx-Stack",css:({ ["position"] : "sticky", ["zIndex"] : "999", ["paddingInlineStart"] : "1em", ["paddingInlineEnd"] : "1em", ["background"] : "rgba(255, 242, 244, 0.4)", ["backdropFilter"] : "blur(1px)", ["top"] : "0", ["width"] : "100%" }),direction:"row",gap:"3"},
 jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })},
 jsx(
 NextLink,
 {href:"/",passHref:true},
-jsx(
-RadixThemesText,
-{as:"p",css:({ ["color"] : "#000000", ["fontFamily"] : "Comfortaa", ["--default-font-family"] : "Comfortaa" }),size:"7",weight:"light"},
-"Sakura Blossom Dev"
-,),),),),jsx(ReactPlayer,{controls:false,css:({ ["position"] : "fixed", ["width"] : "1920px", ["height"] : "1080px", ["objectFit"] : "fill", ["zIndex"] : "-1", ["playsInline"] : true }),height:null,loop:true,muted:true,playing:true,url:"/videos/animation_sakura_blossom.mp4",width:null},)
+jsx("img",{alt:"Logo sakbyte",css:({ ["width"] : "200px" }),src:"/png/sakbyte_logo.png"},)
+,),),),jsx(ReactPlayer,{controls:false,css:({ ["position"] : "fixed", ["width"] : "1920px", ["height"] : "1080px", ["objectFit"] : "fill", ["zIndex"] : "-1", ["playsInline"] : true }),height:null,loop:true,muted:true,playing:true,url:"/videos/animation_sakura_blossom.mp4",width:null},)
 ,jsx(
 RadixThemesFlex,
 {css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })},
@@ -51,7 +48,7 @@ RadixThemesFlex,
 jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"row",gap:"4"},
-jsx(RadixThemesAvatar,{css:({ ["name"] : "Enamuel Beltran", ["height"] : "auto", ["border"] : "3px solid #E8A9B7" }),size:"8",src:"/png/sakura_blossom_dev_logo.png"},)
+jsx(RadixThemesAvatar,{css:({ ["name"] : "Enamuel Beltran", ["height"] : "auto" }),size:"7",src:"/png/logo.png"},)
 ,jsx(
 RadixThemesFlex,
 {align:"start",className:"rx-Stack",direction:"column",gap:"3"},
@@ -327,11 +324,11 @@ RadixThemesText,
 ,),),),),),),),),),jsx(
 RadixThemesFlex,
 {align:"center",className:"rx-Stack",css:({ ["marginTop"] : "84px", ["marginBottom"] : "24px", ["color"] : "#000000", ["width"] : "100%" }),direction:"column",gap:"3"},
-jsx("img",{alt:"Cherry blossom",css:({ ["width"] : "40px" }),src:"/ico/sakura.ico"},)
+jsx("img",{alt:"Cherry blossom",css:({ ["width"] : "40px" }),src:"/ico/logo.ico"},)
 ,jsx(
 RadixThemesText,
 {as:"p"},
-"2024-2025 Sakura Blossom V4"
+"2024-2025 Sakbyte V4"
 ,),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["color"] : "#ff849c" }),target:(true ? "_blank" : ""),trim:"start"},

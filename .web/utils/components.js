@@ -3,11 +3,11 @@
 
 import { Fragment, memo, useContext, useEffect, useState } from "react"
 import { Event, getBackendURL, isTrue, refs } from "$/utils/state"
-import { toast, Toaster } from "sonner"
 import { ColorModeContext, EventLoopContext } from "$/utils/context"
 import { WifiOff as LucideWifiOff } from "lucide-react"
 import { jsx, keyframes } from "@emotion/react"
 import env from "$/env.json"
+import { toast, Toaster } from "sonner"
 
 
 
@@ -21,21 +21,6 @@ const pulse = keyframes`
 `
 
 
-
-export const MemoizedToastProvider = memo(({}) => {
-    
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-  refs['__toast'] = toast
-
-
-
-    return(
-        jsx(Toaster,{closeButton:false,expand:true,position:"bottom-right",richColors:true,theme:resolvedColorMode},)
-
-      )
-
-})
 
 export const DefaultOverlayComponents = memo(({}) => {
     
@@ -77,6 +62,21 @@ jsx(LucideWifiOff,{css:({ ["color"] : "crimson", ["zIndex"] : 9999, ["position"]
 ,)) : (jsx(Fragment,{},)
 )),),),jsx(Fragment,{},)
 ,)
+      )
+
+})
+
+export const MemoizedToastProvider = memo(({}) => {
+    
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+
+
+
+    return(
+        jsx(Toaster,{closeButton:false,expand:true,position:"bottom-right",richColors:true,theme:resolvedColorMode},)
+
       )
 
 })

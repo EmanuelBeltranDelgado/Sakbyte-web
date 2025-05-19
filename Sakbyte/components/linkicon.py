@@ -1,5 +1,5 @@
 import reflex as rx
-import SakuraBlossomDev.styles.styles_index as style
+import Sakbyte.styles.styles_index as style
 
 # Define una función llamada `linkicon` que crea un componente de enlace con un ícono.
 # Parámetros:
