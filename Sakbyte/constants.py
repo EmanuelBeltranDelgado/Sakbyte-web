@@ -10,5 +10,5 @@ LINKEDIN_URL = "https://www.linkedin.com/in/emanuel-beltran-delgado-779b2a31b/"
 SAKURA_COLOR_URL = "https://www.colorhexa.com/ffb7c5"
 EMAIL = "mailto:emanuel.beltran5853@alumnos.udg.mx"
 NEWS = "https://github.com/EmanuelBeltranDelgado/Noticias"
-PAGE_WEB = "https://github.com/EmanuelBeltranDelgado/Sakura-Blossom-Dev-web"
+PAGE_WEB = "https://github.com/EmanuelBeltranDelgado/Sakbyte-web"
 WHATSAPP_URL = WHATSAPP_LINK

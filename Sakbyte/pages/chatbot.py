@@ -3,6 +3,7 @@ from Sakbyte.components.navbar import navbar  # Importa el componente de la barr
 from Sakbyte.views.header import header  # Importa el componente del encabezado
 from Sakbyte.components.footer import footer  # Importa el componente del pie de página
 from Sakbyte.views.chat import chat, action_bar  # Importa los componentes del chat y la barra de acciones
+from Sakbyte.views.chat_deletion_pop_up import chat_delete # Importamos el componente para borrar el historial
 from Sakbyte.components.background_animation import animation_bg  # Importa el componente de animación de fondo
 from Sakbyte import utils  # Importa utilidades generales
 import Sakbyte.styles.styles_index as style  # Importa estilos predefinidos
@@ -29,9 +30,9 @@ def chatbot() -> rx.Component:
                 max_width=style.MAX_WIDTH,  # Define el ancho máximo del contenedor según los estilos
                 margin_y=style.Size.MEDIUM.value,  # Margen vertical medio
                 margin_x=style.Size.MEDIUM.value,  # Margen horizontal medio
-                margin_bottom="84px",  # Margen inferior específico
+                margin_bottom="74px",  # Margen inferior específico
             ),
-            width="100%"  # Define el ancho del contenedor central
+            width="90%"  # Define el ancho del contenedor central
         ),
         
         # Sección central con el chat y la barra de acciones
@@ -39,7 +40,9 @@ def chatbot() -> rx.Component:
             rx.vstack(
                 chat(),  # Componente principal del chat
                 action_bar(),  # Barra de acciones asociada al chat
+                chat_delete(), # Ventana emergente para borrar el historial
                 align="center",  # Alineación centrada de los elementos
+                max_width="800px",  # Limita el ancho total
             ),
         ),
         

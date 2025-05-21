@@ -59,3 +59,15 @@ class StateChatBot(rx.State):
                 )
                 # Generar un "yield" para actualizar el estado con la respuesta parcial
                 yield
+
+    # Atributo para mostrar u ocultar la ventana de confirmación de borrado
+    show_delete_confirmation: bool = False
+
+    # Método para alternar la visibilidad de la ventana de confirmación de borrado
+    def delete_confirmation_pop_up(self):
+        self.show_delete_confirmation = not self.show_delete_confirmation
+
+    # Método para confirmar y borrar el historial del chat, ocultando la ventana de confirmación
+    def confirm_clear_chat(self):
+        self.chat_history = []
+        self.show_delete_confirmation = False

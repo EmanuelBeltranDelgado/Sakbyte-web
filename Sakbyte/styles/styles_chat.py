@@ -22,7 +22,7 @@ question_style = message_style | dict(
 # Estilo específico para las respuestas (mensajes del sistema).
 answer_style = message_style | dict(
     margin_right=chat_margin,  # Margen derecho para alinear respuestas.
-    background_color="#E8A9B7",  # Color de fondo para respuestas.
+    background_color="#ffb7c5",  # Color de fondo para respuestas.
 )
 
 # Estilo para la barra de acciones (entrada de texto y botón).

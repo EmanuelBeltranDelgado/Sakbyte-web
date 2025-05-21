@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useReducer, useState, createElement } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
-export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.sakbyte____state_chat_bot____state_chat_bot": {"chat_history": [], "question": ""}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
+export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.sakbyte____state_chat_bot____state_chat_bot": {"chat_history": [], "question": "", "show_delete_confirmation": false}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}}
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -50,9 +50,9 @@ export const initialEvents = () => [
     ...onLoadInternalEvent()
 ]
 
-export const isDevMode = true
+export const isDevMode = false
 
-export const lastCompiledTimeStamp = "2025-05-19 13:25:21.337831"
+export const lastCompiledTimeStamp = "2025-05-20 18:53:45.172511"
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})

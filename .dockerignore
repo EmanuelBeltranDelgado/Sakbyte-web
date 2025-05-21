@@ -2,6 +2,7 @@
 .git
 __pycache__/*
 Dockerfile
+.states
 uploaded_files
 **/.env
 *.env

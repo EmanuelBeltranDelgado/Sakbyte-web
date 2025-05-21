@@ -45,8 +45,14 @@ def action_bar() -> rx.Component:
 
         ),
         rx.vstack(
+            # Botón para borrar el historial de mensajes
+             rx.button(
+                "Clear Chat", # Texto del botón
+                on_click=StateChatBot.delete_confirmation_pop_up, # Evento para procesar la respuesta
+                width="100%",  # Ancho del botón
+                size="1", # Tamaño del botón
+            ),
             # Botón para enviar la pregunta
-            rx.box(), # Box para bajar el boton
             rx.button(
                 "Ask",  # Texto del botón
                 on_click=StateChatBot.answer,  # Evento para procesar la respuesta
@@ -54,8 +60,7 @@ def action_bar() -> rx.Component:
                 size="2",  # Tamaño del botón
 
             ),
-            spacing="7", # Espacio entre el boton y el box
+            spacing="2", # Espacio entre los botones
         ),
-
-        width="100%"  # Ancho total de la barra de acción
+        width="100%",  # Ancho total de la barra de acción
     )

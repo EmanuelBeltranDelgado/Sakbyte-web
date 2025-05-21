@@ -274,7 +274,7 @@ RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
 jsx(
 NextLink,
-{href:"https://github.com/EmanuelBeltranDelgado/Sakura-Blossom-Dev-web",passHref:true},
+{href:"https://github.com/EmanuelBeltranDelgado/Sakbyte-web",passHref:true},
 jsx(
 RadixThemesButton,
 {css:({ ["width"] : "100%", ["height"] : "100%", ["padding"] : "0.8em", ["borderRadius"] : "1em", ["color"] : "#000000", ["backgroundColor"] : "#ffb7c5", ["whiteSpace"] : "normal", ["&:hover"] : ({ ["backgroundColor"] : "#ff849c" }) })},
