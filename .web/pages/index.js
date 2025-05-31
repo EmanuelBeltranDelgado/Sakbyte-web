@@ -35,7 +35,7 @@ jsx(
 NextLink,
 {href:"/",passHref:true},
 jsx("img",{alt:"Logo sakbyte",css:({ ["width"] : "200px" }),src:"/png/sakbyte_logo.png"},)
-,),),),jsx(ReactPlayer,{controls:false,css:({ ["position"] : "fixed", ["width"] : "1920px", ["height"] : "1080px", ["objectFit"] : "fill", ["zIndex"] : "-1", ["playsInline"] : true }),height:null,loop:true,muted:true,playing:true,url:"/videos/animation_sakura_blossom.mp4",width:null},)
+,),),),jsx(ReactPlayer,{controls:false,css:({ ["position"] : "fixed", ["width"] : "1920px", ["height"] : "1080px", ["objectFit"] : "cover", ["zIndex"] : "-1", ["playsInline"] : true, ["autoPlay"] : true, ["preload"] : "auto" }),height:null,loop:true,muted:true,playing:true,url:"/mp4/bg_animation_sakbyte_optimized.mp4",width:null},)
 ,jsx(
 RadixThemesFlex,
 {css:({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })},
@@ -143,7 +143,7 @@ RadixThemesHeading,
 "My networks"
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://github.com/EmanuelBeltranDelgado",passHref:true},
@@ -167,7 +167,7 @@ RadixThemesText,
 "Overview"
 ,),),),),),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://www.linkedin.com/in/emanuel-beltran-delgado-779b2a31b/",passHref:true},
@@ -195,7 +195,7 @@ RadixThemesHeading,
 "Contact"
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"mailto:emanuel.beltran5853@alumnos.udg.mx",passHref:true},
@@ -219,7 +219,7 @@ RadixThemesText,
 "Contact me by email"
 ,),),),),),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://wa.link/6iss18",passHref:true},
@@ -247,7 +247,7 @@ RadixThemesHeading,
 "Projects"
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://github.com/EmanuelBeltranDelgado/Noticias",passHref:true},
@@ -271,7 +271,7 @@ RadixThemesText,
 "Mobile news app"
 ,),),),),),),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(true ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://github.com/EmanuelBeltranDelgado/Sakbyte-web",passHref:true},
@@ -299,7 +299,7 @@ RadixThemesHeading,
 "Others"
 ,),jsx(
 RadixThemesLink,
-{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),target:(false ? "_blank" : "")},
+{asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }), ["width"] : "100%" }),download:false,target:(false ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"/chatbot",passHref:true},
@@ -342,12 +342,12 @@ NextHead,
 jsx(
 "title",
 {},
-"Sakura Blossom Dev"
-,),jsx("meta",{content:"sakura blossom dev website developed in pure Python",name:"description"},)
-,jsx("meta",{content:"/ico/sakura.ico",property:"og:image"},)
-,jsx("meta",{content:"Sakura Blossom Dev",name:"og:title"},)
-,jsx("meta",{content:"sakura blossom dev website developed in pure Python",name:"og:description"},)
-,jsx("meta",{content:"/ico/sakura.ico",name:"og:image"},)
+"Sakbyte"
+,),jsx("meta",{content:"Personal contact website created in Reflex 100% Python",name:"description"},)
+,jsx("meta",{content:"/ico/logo.ico",property:"og:image"},)
+,jsx("meta",{content:"Sakbyte",name:"og:title"},)
+,jsx("meta",{content:"Personal contact website created in Reflex 100% Python",name:"og:description"},)
+,jsx("meta",{content:"/ico/logo.ico",name:"og:image"},)
 ,jsx("meta",{content:"website",name:"og:type"},)
 ,),)
   )

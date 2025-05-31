@@ -8,7 +8,7 @@ import Sakbyte.styles.styles_index as style
 # - url: Enlace al que redirige el botón.
 # - image: Ruta de la imagen que se mostrará en el botón.
 # - is_external: Indica si el enlace es externo (por defecto es True).
-def linkbutton(title: str, body: str, url: str, image: str, is_external=True) -> rx.Component:
+def linkbutton(title: str, body: str, url: str, image: str, is_external=True, download=False) -> rx.Component:
     # Retornamos un componente de enlace (`rx.link`) que contiene un botón.
     return rx.link(
         # El botón (`rx.button`) contiene una estructura horizontal (`rx.hstack`).
@@ -37,5 +37,6 @@ def linkbutton(title: str, body: str, url: str, image: str, is_external=True) ->
         ),
         href=url,  # Enlace al que redirige el botón.
         is_external=is_external,  # Indica si el enlace es externo.
+        download=download,
         width="100%",  # Ancho del enlace.
     )

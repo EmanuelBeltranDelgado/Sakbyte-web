@@ -7,9 +7,9 @@ _meta = [
 ]
 
 # Título y descripción para la página principal (index)
-index_title = "Sakura Blossom Dev"  # Título de la página principal
-index_description = "sakura blossom dev website developed in pure Python"  # Descripción de la página principal
-index_image="/ico/sakura.ico"
+index_title = "Sakbyte"  # Título de la página principal
+index_description = "Personal contact website created in Reflex 100% Python"  # Descripción de la página principal
+index_image="/ico/logo.ico"
 
 # Metadatos específicos para la página principal
 index_meta = [
@@ -21,9 +21,9 @@ index_meta = [
 index_meta.extend(_meta)  # Agrega los metadatos comunes a los metadatos de la página principal
 
 # Título y descripción para la página del chatbot
-chatbot_title = "Sakura Blossom Dev chat bot"  # Título de la página del chatbot
-chatbot_description = "Chat with the Sakura Blossom Dev chatbot."  # Descripción de la página del chatbot
-chatbot_image="/ico/sakura.ico"
+chatbot_title = "Sakbyte chat bot"  # Título de la página del chatbot
+chatbot_description = "Chat with the Sakbyte chatbot."  # Descripción de la página del chatbot
+chatbot_image="/ico/logo.ico"
 
 # Metadatos específicos para la página del chatbot
 chatbot_meta = [

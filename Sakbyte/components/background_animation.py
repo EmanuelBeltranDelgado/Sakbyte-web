@@ -4,7 +4,7 @@ import reflex as rx
 def animation_bg() -> rx.Component:
     return rx.video(
         # Ruta del video que se usará como fondo animado.
-        url="/videos/animation_sakura_blossom.mp4",
+        url="/mp4/bg_animation_sakbyte_optimized.mp4",
         # Posición fija para que el video permanezca en el fondo mientras se navega.
         position="fixed",
 
@@ -15,7 +15,7 @@ def animation_bg() -> rx.Component:
         height="1080px",  # Alto del video en píxeles.
         
         # Ajuste del contenido del video para llenar el área especificada.
-        object_fit="fill",
+        object_fit="cover",
         # Índice Z negativo para que el video quede detrás de otros elementos.
         z_index="-1",
         # Configuración para que el video se reproduzca automáticamente.
@@ -28,4 +28,8 @@ def animation_bg() -> rx.Component:
         controls=False,
         # Permite que el video se reproduzca en línea en dispositivos móviles (sin forzar pantalla completa).
         plays_inline=True,
+
+        # Mejora en velocidad de carga (opcional si Reflex lo soporta directamente)
+        auto_play=True,  # Algunos navegadores lo requieren para autoplay
+        preload="auto",  # Carga anticipada del video
     )

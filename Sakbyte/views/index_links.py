@@ -55,7 +55,14 @@ def index_links() -> rx.Component:
             "Chat with AI and have fun",
             Route.CHATBOT.value,  # Ruta interna para el chatbot
             "/svg/chat_bot.svg",  # Icono asociado
-            is_external=False  # Indica que el enlace no es externo
+            is_external=False,  # Indica que el enlace no es externo
         ),
+        #linkbutton(
+        #    "CV",
+        #    "Download my CV",
+        #    "/files/CV.pdf",
+        #    "/svg/download_file.svg",
+        #    download=True,
+        #),
         width="100%",  # Ancho del contenedor
     )
