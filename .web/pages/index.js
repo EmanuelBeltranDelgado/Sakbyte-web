@@ -34,7 +34,7 @@ RadixThemesLink,
 jsx(
 NextLink,
 {href:"/",passHref:true},
-jsx("img",{alt:"Logo sakbyte",css:({ ["width"] : "200px" }),src:"/png/sakbyte_logo.png"},)
+jsx("img",{alt:"Logo sakbyte",css:({ ["width"] : "200px", ["transition"] : "transform 0.8s ease", ["&:hover"] : ({ ["transform"] : "scale(1.04)" }) }),src:"/png/sakbyte_logo.png"},)
 ,),),),jsx(ReactPlayer,{controls:false,css:({ ["position"] : "fixed", ["width"] : "1920px", ["height"] : "1080px", ["objectFit"] : "cover", ["zIndex"] : "-1", ["playsInline"] : true, ["autoPlay"] : true, ["preload"] : "auto" }),height:null,loop:true,muted:true,playing:true,url:"/mp4/bg_animation_sakbyte_optimized.mp4",width:null},)
 ,jsx(
 RadixThemesFlex,
@@ -69,28 +69,28 @@ RadixThemesLink,
 jsx(
 NextLink,
 {href:"https://github.com/EmanuelBeltranDelgado",passHref:true},
-jsx("img",{alt:"Github",css:({ ["width"] : "1.5em" }),src:"/svg/github.svg"},)
+jsx("img",{alt:"Github",css:({ ["width"] : "1.5em", ["transition"] : "transform 0.3s ease", ["&:hover"] : ({ ["transform"] : "scale(1.1)" }) }),src:"/svg/github.svg"},)
 ,),),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://www.linkedin.com/in/emanuel-beltran-delgado-779b2a31b/",passHref:true},
-jsx("img",{alt:"Linkedin",css:({ ["width"] : "1.5em" }),src:"/svg/linkedin.svg"},)
+jsx("img",{alt:"Linkedin",css:({ ["width"] : "1.5em", ["transition"] : "transform 0.3s ease", ["&:hover"] : ({ ["transform"] : "scale(1.1)" }) }),src:"/svg/linkedin.svg"},)
 ,),),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"mailto:emanuel.beltran5853@alumnos.udg.mx",passHref:true},
-jsx("img",{alt:"Email",css:({ ["width"] : "1.5em" }),src:"/svg/email.svg"},)
+jsx("img",{alt:"Email",css:({ ["width"] : "1.5em", ["transition"] : "transform 0.3s ease", ["&:hover"] : ({ ["transform"] : "scale(1.1)" }) }),src:"/svg/email.svg"},)
 ,),),jsx(
 RadixThemesLink,
 {asChild:true,css:({ ["textDecoration"] : "none", ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) }),target:(true ? "_blank" : "")},
 jsx(
 NextLink,
 {href:"https://wa.link/6iss18",passHref:true},
-jsx("img",{alt:"WhatsApp",css:({ ["width"] : "1.5em" }),src:"/svg/whatsapp.svg"},)
+jsx("img",{alt:"WhatsApp",css:({ ["width"] : "1.5em", ["transition"] : "transform 0.3s ease", ["&:hover"] : ({ ["transform"] : "scale(1.1)" }) }),src:"/svg/whatsapp.svg"},)
 ,),),),),),jsx(
 Fragment,
 {},

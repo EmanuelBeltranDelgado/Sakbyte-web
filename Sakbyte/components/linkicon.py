@@ -14,7 +14,10 @@ def linkicon(url: str, image: str, alt: str) -> rx.Component:
         rx.image(
             image,
             width=style.Size.DEFAULT.value,  # Usa el tamaño predeterminado definido en los estilos.
-            alt=alt  # Texto alternativo para la imagen.
+            alt=alt,  # Texto alternativo para la imagen.
+            # Animación para hacer más visible la selección
+            transition="transform 0.3s ease",
+            _hover={"transform": "scale(1.1)"},
         ),
         href=url,  # URL del enlace.
         is_external=True  # Indica que el enlace es externo (se abre en una nueva pestaña).

@@ -11,7 +11,10 @@ def navbar() -> rx.Component:
             rx.image(
                 "/png/sakbyte_logo.png", 
                 width="200px", 
-                alt="Logo sakbyte"
+                alt="Logo sakbyte",
+                # Animación para hacer más visible la selección
+                transition="transform 0.8s ease",
+                _hover={"transform": "scale(1.04)"},
             ),
             href=Route.INDEX.value,  # Ruta a la que redirige el enlace
         ),
